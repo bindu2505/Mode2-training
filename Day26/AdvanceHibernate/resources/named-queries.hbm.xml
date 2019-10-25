@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN" "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd" >
+<hibernate-mapping>
+<query name="HQL_GET_EMPLOY_BY_NAME">
+<![CDATA[from Employ where name=:name]]>
+</query>
+<!-- <query name="@HQL_GET_ALL_EMPLOY">
+
+</query>
+ --></hibernate-mapping>

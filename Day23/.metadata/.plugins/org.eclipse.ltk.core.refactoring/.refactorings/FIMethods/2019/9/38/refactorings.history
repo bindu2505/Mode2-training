@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename type &apos;com.bindu.fi.Interface&apos; to &apos;Employeeinterface&apos;&#x0D;&#x0A;- Original project: &apos;FIMethods&apos;&#x0D;&#x0A;- Original element: &apos;com.bindu.fi.Interface&apos;&#x0D;&#x0A;- Renamed element: &apos;com.bindu.fi.Employeeinterface&apos;&#x0D;&#x0A;- Update references to refactored element&#x0D;&#x0A;- Update textual occurrences in comments and strings" description="Rename type &apos;Interface&apos;" flags="589830" id="org.eclipse.jdt.ui.rename.type" input="/src&lt;com.bindu.fi{Interface.java[Interface" matchStrategy="1" name="Employeeinterface" qualified="false" references="true" similarDeclarations="false" stamp="1568614822499" textual="false" version="1.0"/>
+</session>

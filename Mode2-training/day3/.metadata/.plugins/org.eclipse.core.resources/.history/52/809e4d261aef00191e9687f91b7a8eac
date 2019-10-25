@@ -1,0 +1,14 @@
+#Database related properties
+database.driver=com.mysql.jdbc.Driver
+database.url=jdbc:mysql://localhost:3306/sqlpractice
+database.user=root
+database.password=mukesh
+
+#Hibernate related properties
+hibernate.dialect=org.hibernate.dialect.MySQLDialect
+hibernate.show_sql=true
+hibernate.format_sql=true
+hibernate.hbm2ddl.auto=update
+
+spring.mvc.view.prefix=/WEB-INF/views
+spring.mvc.view.suffix=.jsp

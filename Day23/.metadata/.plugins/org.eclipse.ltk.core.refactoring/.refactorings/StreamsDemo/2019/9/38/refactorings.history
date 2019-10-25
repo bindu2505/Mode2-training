@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Copy element &apos;Employee.java&apos; to &apos;Java8Streams/src/main/java/com.bindu.java8streams.model&apos;&#x0D;&#x0A;- Original project: &apos;StreamsDemo&apos;&#x0D;&#x0A;- Destination element: &apos;Java8Streams/src/main/java/com.bindu.java8streams.model&apos;&#x0D;&#x0A;- Original element: &apos;com.bindu.streams.Employee.java&apos;" description="Copy compilation unit" destination="=Java8Streams/src\/main\/java&lt;com.bindu.java8streams.model" element1="/src&lt;com.bindu.streams{Employee.java" files="0" flags="589830" folders="0" id="org.eclipse.jdt.ui.copy" policy="org.eclipse.jdt.ui.copyResources" stamp="1568700218834" units="1" version="1.0"/>
+</session>

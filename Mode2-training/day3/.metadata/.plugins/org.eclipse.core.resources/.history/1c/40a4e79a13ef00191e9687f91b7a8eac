@@ -1,0 +1,17 @@
+package com.bindu;
+
+
+import java.util.List;
+
+public interface EmployeeDAO {
+
+	public void addEmployee(Employ employee);
+
+	public List<Employ> getAllEmployees();
+
+	public void deleteEmployee(Integer employeeId);
+
+	public Employ updateEmployee(Employ employee);
+
+	public Employ getEmployee(int employeeid);
+}

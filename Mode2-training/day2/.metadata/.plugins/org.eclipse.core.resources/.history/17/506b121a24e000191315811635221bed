@@ -1,0 +1,13 @@
+package com.bindu.demo;
+
+public class AccountServiceImpl implements AccountService33 {
+
+	@Override
+	public String addAccount(Account account) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+	
+	
+
+}

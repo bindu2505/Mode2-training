@@ -1,0 +1,28 @@
+<!-- Use this file to deploy some handlers/chains and services      -->
+<!-- Two ways to do this:                                           -->
+<!--   java org.apache.axis.client.AdminClient deploy.wsdd          -->
+<!--      after the axis server is running                          -->
+<!-- or                                                             -->
+<!--   java org.apache.axis.utils.Admin client|server deploy.wsdd   -->
+<!--      from the same directory that the Axis engine runs         -->
+
+<deployment
+    xmlns="http://xml.apache.org/axis/wsdd/"
+    xmlns:java="http://xml.apache.org/axis/wsdd/providers/java">
+
+  <!-- Services from BinduService WSDL service -->
+
+  <service name="Bindu" provider="java:RPC" style="wrapped" use="literal">
+      <parameter name="wsdlTargetNamespace" value="http://bindu.com"/>
+      <parameter name="wsdlServiceElement" value="BinduService"/>
+      <parameter name="schemaQualified" value="http://bindu.com"/>
+      <parameter name="wsdlServicePort" value="Bindu"/>
+      <parameter name="className" value="com.bindu.BinduSoapBindingImpl"/>
+      <parameter name="wsdlPortType" value="Bindu"/>
+      <parameter name="typeMappingVersion" value="1.2"/>
+      <operation name="getName" qname="operNS:getName" xmlns:operNS="http://bindu.com" returnQName="retNS:getNameReturn" xmlns:retNS="http://bindu.com" returnType="rtns:string" xmlns:rtns="http://www.w3.org/2001/XMLSchema" soapAction="" >
+      </operation>
+      <parameter name="allowedMethods" value="getName"/>
+
+  </service>
+</deployment>

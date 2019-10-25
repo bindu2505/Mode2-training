@@ -1,0 +1,7 @@
+package com.bindu.demo;
+
+public interface UserInterface  {
+	
+	public User getUserByUserName(String username);
+
+}

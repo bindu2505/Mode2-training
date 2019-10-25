@@ -1,0 +1,5 @@
+package com.bindu.demo;
+
+public interface AccountRepository {
+
+}

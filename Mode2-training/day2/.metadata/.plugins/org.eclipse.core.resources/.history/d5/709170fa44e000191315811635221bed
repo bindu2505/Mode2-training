@@ -1,0 +1,38 @@
+package com.bindu.demo;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.web.client.RestTemplate;
+
+public class RemoteAccountRepository implements AccountRepository {
+
+	@Autowired
+	protected RestTemplate restTemplate;
+	
+	protected String serviceUrl;
+
+	@Override
+	public Account byId(int userid) {
+		return restTemplate.getForObject(serviceUrl + "/Accounts/{userid}",
+				Account.class, userid);
+	}
+	
+
+	@Override
+	public Account byAccount(int accountnum) {
+		return restTemplate.getForObject(serviceUrl + "/Accounts/{accountnum}",
+				Account.class, accountnum);
+	}
+
+	@Override
+	public String addAcc(Account account) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public String deleteAcc(int accountnum) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+	
+}

@@ -1,0 +1,27 @@
+package com.bindu.demo;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.web.client.RestTemplate;
+
+public class RemoteUserRepository implements UserRepositry{
+	@Autowired
+	protected RestTemplate restTemplate;
+	
+	protected String serviceUrl;
+	
+	
+	public RemoteUserRepository(String serviceUrl) {
+		this.serviceUrl = serviceUrl.startsWith("http") ? serviceUrl
+				: "http://" + serviceUrl;
+	}
+
+
+	@Override
+	public User getUserByUserName(String username) {
+		return restTemplate.getForObject(serviceUrl + "/User/{userName}/user",
+				User.class, username);
+
+	}
+	
+
+}

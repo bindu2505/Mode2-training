@@ -1,0 +1,13 @@
+eclipse.preferences.version=1
+encoding//src/com/bindu/Calculator.java=UTF-8
+encoding//src/com/bindu/CalculatorService.java=UTF-8
+encoding//src/com/bindu/CalculatorServiceLocator.java=UTF-8
+encoding//src/com/bindu/CalculatorSoapBindingStub.java=UTF-8
+encoding//src/com/jaanu/JananiDemo.java=UTF-8
+encoding//src/com/jaanu/JananiDemoService.java=UTF-8
+encoding//src/com/jaanu/JananiDemoServiceLocator.java=UTF-8
+encoding//src/com/jaanu/JananiDemoSoapBindingStub.java=UTF-8
+encoding//src/com/sri/Sri.java=UTF-8
+encoding//src/com/sri/SriService.java=UTF-8
+encoding//src/com/sri/SriServiceLocator.java=UTF-8
+encoding//src/com/sri/SriSoapBindingStub.java=UTF-8

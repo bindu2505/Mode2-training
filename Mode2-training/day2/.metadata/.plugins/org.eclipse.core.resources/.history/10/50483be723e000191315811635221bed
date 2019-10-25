@@ -1,0 +1,26 @@
+package com.bindu.demo;
+
+
+
+public interface AccountService33 {
+	
+	//public List<Account> getAllAccounts();
+	
+	//public Account getAccount(int accountnum);
+	
+	public String addAccount(String accStr); 
+	
+	//public String deleteAccount(int accountnum);
+	
+	//public String deleteAccounts(String empStr);
+	
+
+	//public String updateAccount(String empStr);
+
+	//public String updateAccounts(String empStr);
+
+
+
+
+
+}

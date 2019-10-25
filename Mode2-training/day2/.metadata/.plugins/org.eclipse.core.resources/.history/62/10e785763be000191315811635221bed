@@ -1,0 +1,38 @@
+package com.bindu.demo;
+
+import org.json.simple.JSONObject;
+import org.json.simple.JSONValue;
+import org.springframework.beans.factory.annotation.Autowired;
+
+public class AccountService {
+	
+	@Autowired
+	AccountRepositry accountRepositry;
+	
+	public Account findAccountByUserId(int userid) {
+		Account account=accountRepositry.findAccountByUserid(userid);
+		return account;
+	}
+	
+	public String addAccount(String accountStr) {
+		Object object=JSONValue.parse(accountStr);
+		JSONObject jsonObject=(JSONObject)object;
+		int accountnum=Integer.parseInt((String)jsonObject.get("accountnum"));
+		double amt=(Double)jsonObject.get("amount");
+		char acctype=((String)jsonObject.get("accounttype")).charAt(0);
+		int userid=Integer.parseInt((String)jsonObject.get("userid"));
+		
+		Account account=new Account();
+		account.setAccountnum(accountnum);
+		account.setAmount(amt);
+		account.setAccounttype(acctype);
+		account.setUserid(userid);
+		
+		accountRepositry.save(account);
+		return "Account created";
+	}
+	
+	
+	
+
+}

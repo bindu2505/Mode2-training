@@ -1,0 +1,76 @@
+<%@ page language="java" contentType="text/html; charset=ISO-8859-1"
+    pageEncoding="ISO-8859-1"%>
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
+<title>Insert title here</title>
+</head>
+<body>
+<form method="get" action="AddSubject.jsp" >
+	<select id="sub">
+  <option value="C#">C#</option>
+  <option value="Microprocessor">Microprocessor</option>
+  <option value="Java">Java</option>
+  <option value="C++">C++</option>
+  <option value="PC Architecture">PC Architecture</option>
+  <option value="Networks">Networks</option>
+  <option value="Signals">Signals</option>
+   </select>
+   <br/><br/>
+   
+   Theory:
+  <input type="text" id="theory" name="theory" readonly="readonly" /><br/><br/>
+  Practical:
+   <input type="text" id="practical" name="practical" readonly="readonly" /><br/><br/>
+   
+   <script>
+  
+   if(document.getElementById("sub").value="Microprocessor"){
+	   document.getElementById("theory").value=45;
+	   document.getElementById("practical").value=65;
+   }
+   
+   if(document.getElementById("sub").value="C#"){
+	   document.getElementById("theory").value=23;
+	   document.getElementById("practical").value=12;
+   }
+   
+   if(document.getElementById("sub").value="Java"){
+	   document.getElementById("theory").value=14;
+	   document.getElementById("practical").value=100;
+   }
+   
+   if(document.getElementById("sub").value="C++"){
+	   document.getElementById("theory").value=45;
+	   document.getElementById("practical").value=75;
+   }
+   
+   if(document.getElementById("sub").value="PC Architecture"){
+	   document.getElementById("theory").value=78;
+	   document.getElementById("practical").value=65;
+   }
+   
+   if(document.getElementById("sub").value="Signals"){
+	   document.getElementById("theory").value="18";
+	   document.getElementById("practical").value="65";
+   }
+   
+   if(document.getElementById("sub").value="Networks"){
+	   document.getElementById("theory").value="99";
+	   document.getElementById("practical").value="65";
+   }
+   
+  
+   
+   </script>
+   Year:
+    <input type="text" name="year" /><br/><br/>
+  
+   Instructor:
+    <input type="text" name="instructor" /><br/><br/>
+    <input type="submit" value="Click"/>
+  
+</form>
+</body>
+</html>

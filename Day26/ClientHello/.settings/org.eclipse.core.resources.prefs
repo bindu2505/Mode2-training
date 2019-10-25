@@ -1,0 +1,10 @@
+eclipse.preferences.version=1
+encoding//src/com/fault/HelloWorld.java=UTF-8
+encoding//src/com/fault/HelloWorldPortBindingStub.java=UTF-8
+encoding//src/com/fault/HelloWorldService.java=UTF-8
+encoding//src/com/fault/HelloWorldServiceLocator.java=UTF-8
+encoding//src/com/fault/MissingName.java=UTF-8
+encoding//src/helloservice/endpoint/Hello.java=UTF-8
+encoding//src/helloservice/endpoint/HelloPortBindingStub.java=UTF-8
+encoding//src/helloservice/endpoint/HelloService.java=UTF-8
+encoding//src/helloservice/endpoint/HelloServiceLocator.java=UTF-8

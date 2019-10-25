@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Copy element &apos;HibernateUtil.java&apos; to &apos;StudentSpringHibernate1/src/main/java/com.hcl.student.dao&apos;&#x0D;&#x0A;- Original project: &apos;CollegeManagement&apos;&#x0D;&#x0A;- Destination element: &apos;StudentSpringHibernate1/src/main/java/com.hcl.student.dao&apos;&#x0D;&#x0A;- Original element: &apos;com.hcl.college.HibernateUtil.java&apos;" description="Copy compilation unit" destination="=StudentSpringHibernate1/src\/main\/java&lt;com.hcl.student.dao" element1="/src\/main\/java&lt;com.hcl.college{HibernateUtil.java" files="0" flags="589830" folders="0" id="org.eclipse.jdt.ui.copy" policy="org.eclipse.jdt.ui.copyResources" stamp="1568101224956" units="1" version="1.0"/>
+</session>

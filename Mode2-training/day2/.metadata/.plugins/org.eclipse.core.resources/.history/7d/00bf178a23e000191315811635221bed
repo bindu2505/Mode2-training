@@ -1,0 +1,18 @@
+package com.bindu.demo;
+
+import org.springframework.beans.factory.annotation.Autowired;
+
+public class AccountServiceRepositry {
+	
+	@Autowired
+	AccountRepositry accountRepositry;
+	
+	public Account findAccountByUserId(int userid) {
+		Account account=accountRepositry.findAccountByUserid(userid);
+		return account;
+	}
+	
+	
+	
+
+}

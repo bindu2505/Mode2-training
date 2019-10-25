@@ -1,0 +1,30 @@
+package com.bindu.demo;
+
+import java.util.logging.Logger;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.web.bind.annotation.PathVariable;
+import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RestController;
+
+@RestController
+public class AccountController {
+	
+	protected Logger logger = Logger
+			.getLogger(AccountController.class.getName());
+	
+	
+	@Autowired
+	AccountRepositry accountRepositry;
+	
+	@RequestMapping("/{userid}/getAccount")
+	public Account byId(@PathVariable("userid") int userid) {
+		logger.info("accounts-microservice getUserByUserName() invoked: " + userid);
+		Account account = accountRepositry.findAccountByUserId(userid);
+		logger.info("accounts-microservice getUserByUserName() found: " + account);
+		return account;
+	
+	}
+	
+
+}

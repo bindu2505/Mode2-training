@@ -1,0 +1,21 @@
+package com.bindu;
+
+import java.util.List;
+
+import org.springframework.data.jpa.repository.Query;
+import org.springframework.data.repository.CrudRepository;
+
+public interface EmployeeRepository extends CrudRepository<Employ, Integer>{
+	@Query("SELECT e from Employ e where dept=?1 and desig=?2")
+	List<Employ> findByDeptAndDesig(String department,String designation);
+	
+	@Query("SELECT e from Employ e where dept=?1 ")
+	List<Employ> findByDept(String department);
+	
+	@Query("SELECT e from Employ e where desig=?1")
+	List<Employ> findByDesig(String designation);
+	
+	@Query("SELECT e from Employ e where basic>?1")
+	List<Employ> findBySalary(int designation);
+	
+}

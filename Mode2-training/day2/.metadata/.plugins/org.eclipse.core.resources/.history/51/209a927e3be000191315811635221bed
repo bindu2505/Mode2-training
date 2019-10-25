@@ -1,0 +1,19 @@
+package com.bindu.demo;
+
+import org.springframework.beans.factory.annotation.Autowired;
+
+public class AccountServiceImpl implements AccountService33 {
+	
+	
+	@Autowired
+	AccountRepositry accountRepositry;
+	
+	@Override
+	public String addAccount(Account account) {
+		accountRepositry.save(account);
+		return "Account created";
+	}
+	
+	
+
+}
